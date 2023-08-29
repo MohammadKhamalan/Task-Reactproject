@@ -1,0 +1,140 @@
+@import "../Style.scss";
+
+.navbar{
+   
+    @include themify($themes) {
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 10px 20px;
+height: 50;
+border-bottom: 1px solid lightgray;
+background-color: themed("bg");
+    color:themed("textColor");
+    @include mobile{
+        width: 500px;
+display: flex;
+
+}
+@include tablet{
+    display: flex;  
+      width: 1120px;
+    
+      }
+.left{
+    display: flex;
+    align-items: center;
+gap: 30px;
+@include mobile{
+gap: 1px;
+margin-left: 8px;
+}
+@include tablet{
+    gap: 1px;
+    margin-left: 8px;
+    }
+    
+
+}
+.search{
+    display: flex;
+    align-items: center;
+    input{
+        @include mobile{
+            width: 50px;
+            }
+            @include tablet{
+                gap: 1px;
+                margin-left: 8px;
+                width: 130px;
+                }
+                
+border: "none";
+width: 200px;
+border-radius: 25px;
+height: 30px;
+gap: 10px;
+}
+}
+.center{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    @include mobile{
+        gap: 10px;
+        margin-right: 130px;
+        @include themify($themes) {
+
+            background-color: themed("bg");
+                }
+        }
+        @include tablet{
+            gap: 1px;
+            margin-left: -118px;
+            }
+}
+.right{
+    display: flex;
+    align-items: center;
+    gap:30px;
+    @include themify($themes) {
+
+        background-color: themed("bg");
+            }
+    @include mobile{
+        margin-left: -130px;
+        gap: 10px;
+        margin-right: -40px;
+        @include themify($themes) {
+
+            background-color: themed("bg");
+                }
+        }
+        @include tablet{
+            gap: 1px;
+            margin-right: 300px;
+            }
+        
+}
+.icon{
+    display: flex;
+    align-items: center;
+    gap:30px;
+    @include themify($themes) {
+
+        background-color: themed("bg");
+            }
+    @include mobile{
+        margin-left: -3px;
+        gap: 10px;
+        margin-right: 5px;
+        @include themify($themes) {
+
+            background-color: themed("bg");
+                }        
+            }
+            @include tablet{
+                gap: 10px;
+                margin-left: 8px;
+                }
+}
+.profile{
+width: 50px;
+height: 50px;
+ border-radius: 50%;
+ @include themify($themes) {
+
+    background-color: themed("bg");
+        }
+        @include mobile{
+            @include themify($themes) {
+
+                background-color: themed("bg");
+                    }}
+                    @include tablet{
+                        gap: 10px;
+                        margin-left: 8px;
+                        }
+}
+}}

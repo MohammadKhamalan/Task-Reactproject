@@ -1,0 +1,172 @@
+@import "../Style.scss";
+
+.small-post {
+    @include themify($themes) {
+        background-color: themed("bg");
+    }  
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+height: 700px;
+  .post-image {
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 10px; 
+      @include tablet{
+       
+      margin-left: 60px;
+      }
+      /* Add margin to create space between image and content */
+    }
+  }
+  .image-post{
+    height: 900px;
+    display: grid;
+    
+  }
+  .image-gallery {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+ 
+  }
+
+  .imgg2 {
+    @include mobile{
+      display: flex;
+    gap: 10px;
+    margin-right: -20px;
+    width: 150px;
+    }
+    @include tablet{
+      display: flex;
+    gap: 10px;
+    margin-right: -20px;
+    width: 450px;
+    }
+     width:500px;
+        margin-top: -20px; 
+        margin-left: -20px; 
+    height: 450px;
+    margin-right: 10px;
+  }
+  .post-text{
+    margin-right: 700px;
+  }
+  .imgg{
+    width: 500px;
+    height: 500px;
+    margin-right: 700px;
+    @include mobile{
+      display: flex;
+    gap: 1px;
+    margin-right: -20px;
+    width: 200px;
+    }
+  }
+.link-title{
+    font-size: 16px;
+}
+.link-description{
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 5px;
+
+
+}
+  .post-content {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the top */
+    flex: 1;
+    height: 100px;
+
+
+    .user-name {
+      font-weight: bold;
+      font-size: 15px;
+      margin-top: 5px; /* Adjust margin */
+    }
+
+    .post-info {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      color: #777;
+      margin-top:-15px; /* Add margin between "Mohammad Khamalan" and icons */
+     
+      .like-icon {
+        margin-right: 5px;
+        margin-top: 15px;
+      }
+      .comment-count {
+        color: #777;
+        margin-top: 15px;
+
+      }
+    }
+    
+    .interaction-icons {
+     
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #777;
+        margin-right: -10px;
+        font-size: 16px;
+        margin-bottom: -55px;
+         @include tablet{
+        display: flex;
+      gap: 10px;
+      margin-right: -20px;
+      }
+span{
+    display: flex;
+}
+        .icon {
+          cursor: pointer;
+          transition: color 0.3s;
+margin-right: 500px;
+          &:hover {
+            color: blue; /* Change color on hover */
+          }
+          @include mobile{
+            display: flex;
+          gap: 1px;
+          margin-right: -10px;
+          }
+          @include tablet{
+            display: flex;
+          gap: 1px;
+          margin-right: -10px;
+          }
+          
+        
+        }
+      }
+      .interaction-counts {
+        display: flex;
+        align-items: center;
+        margin-left: -1720px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+
+      
+
+       
+      }
+
+    .post-text {
+      font-size: 14px;
+      margin-bottom: 10px;
+      margin-top: 10px; /* Adjust margin */
+      font-weight: bold; /* Make the text bold */
+    }
+  }
+}
