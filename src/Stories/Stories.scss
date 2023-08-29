@@ -1,0 +1,56 @@
+@import "../Style.scss";
+
+.stories {
+    
+    display: flex;
+    gap: 0; /* Remove spacing between story containers */
+    height: 300px;
+    margin-bottom: 30px;
+    @include themify($themes) {
+        background-color: themed("bg");
+    }  
+    .story {
+      width: 25%; /* Set a fixed width for each story container */
+  gap: 0;
+  @include themify($themes) {
+    background-color: themed("bg");
+}  
+
+      .story-image {
+        display: flex;
+        flex-direction: column;
+
+margin-top: 20px;
+margin-bottom: 20px;        
+        img {
+          width: 70%;
+          height: 280px; /* Set a fixed height for the images */
+          object-fit: cover;
+          border-radius: 10px 10px 0 0;
+          @include mobile{
+            width:100% ;
+            margin-right: 40px;   
+                    }
+
+        }
+  
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          color: black;
+          font-weight: 500;
+          margin-bottom: 10px;
+          margin-top: 20px;
+          @include themify($themes) {
+            color:themed("textColor");
+        }  
+ @include mobile{
+        width:200% ;
+        margin-right: 40px;   
+                }
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,315 @@
+@import "../Style.scss";
+
+.profile {
+   
+    @include themify($themes) {
+width: 95%;
+    padding: 20px 70px;
+    background-color: themed("bg");
+    color:themed("textColor");
+  .place{
+    background-color: themed("bg");
+ height: 150px;
+  }
+  
+  .images {
+    position: relative;
+  
+    .cover {
+        @include mobile{
+            flex-direction: column;
+            width: 720px;
+            margin-left: -170px;
+
+          }
+          @include tablet{
+            flex-direction: column;
+            width: 1120px;
+            margin-left: -170px;
+            }
+      width: 1500px;
+      height:150%;
+      object-fit: cover;
+      margin-left: -70px;
+    }
+  
+    .profilePic {
+        @include mobile{
+            flex-direction: column;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: absolute;
+            transform: translateX(55%);
+            top: 77%;
+            margin-top: -120px;
+
+          }
+          @include tablet{
+            flex-direction: column;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: absolute;
+            transform: translateX(210%);
+            top: 77%;
+            margin-top: -120px;
+
+          }
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      position: absolute;
+      transform: translateX(275%);
+      top: 77%;
+      margin-top: -120px;
+     
+    }
+  }
+  
+  .profileContainer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    top: 90%;
+    left: 0%;
+    background-color: themed("bg");
+    span{
+        @include tablet{
+    margin-left: 60px;
+        }
+    }
+    @include mobile{
+        margin-top: -175px;
+margin-left: 40px;
+    }
+    @include tablet{
+     
+        margin-top: -115px;
+        margin-left: -15px;
+      }
+
+  }
+  
+  span {
+    display: block;
+    margin-bottom: 10px;
+    background-color: themed("bg");
+  
+  }
+  
+  .container {
+    @include mobile{
+        width:55% ;
+                }
+                @include tablet{
+                    width:60% ;
+                    margin-left: 60px;
+                            }
+    background-color: themed("bg");
+   
+    width: 95%;
+    display: block;
+    align-items: left;
+    gap: 5px;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 16px;
+    margin:15px;
+    -webkit-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+        -moz-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+        box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+        border-radius: 20px;
+      
+    
+  }
+  .bit{
+    width: 100%;
+    background-color: themed("bg");
+    margin-bottom: 20px;
+
+  }
+  button {
+    border: none;
+    background-color: #5271ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 150px;
+    cursor: pointer;
+  }
+  
+  .details {
+    display: grid;
+        background-color: themed("bg");
+        @include mobile{
+            width:100%;    
+                    
+                            }
+    @include tablet{
+                        width:150% ;
+                                }
+    
+  
+                     .posts {
+                     display: flex;
+                 justify-content: space-between;
+                   align-items: center;
+                     border-radius: 20px;
+                        background-color: themed("bg");
+            padding: 40px;
+            box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+           @include mobile{
+              margin:-5px;
+                }
+             .photo {
+                margin-top: -105px;
+                 @include mobile{
+                    margin-top: -505px;
+
+                 }     
+                 @include tablet{
+                    margin-top: -145px;
+margin-right: 40px;
+margin-left: 20px;
+                 }                  
+                 width: 60px;
+             height: 60px;
+              border-radius: 50%;
+             object-fit: cover;
+              margin-right: 20px;
+                                    }
+                                  
+  .input-container {
+    flex: 1;
+    display: flex;
+         flex-direction: column;
+                       
+              input {
+                padding: 10px;
+            border: 1px solid lightgray;
+                border-radius: 10px;
+               margin-bottom: 10px;
+               @include mobile{
+                margin-top: -285px;
+                margin-left: 10px;
+
+             }     
+              }
+             .photo{
+                     @include mobile{
+               margin:-20px;                           }
+                          
+            @include tablet{
+                margin:2px;
+            }}
+                  .post-options {
+                    display: flex;
+                   justify-content: space-between;
+                   align-items: center;
+                   font-size: 14px;
+                 
+               .option {
+          display: flex;
+            gap: 20px;
+            @include mobile{
+                margin-top: 14px;
+                margin-left: -80px;
+                                }
+                                             }
+                                                                          .story {
+            display: flex;
+             gap: 20px;
+                                  
+          .add-story-button {
+           display: flex;
+           align-items: center;
+            gap: 5px;
+                  background-color: transparent;
+                        border: none;
+                        cursor: pointer;
+                         color: #555;
+                                  
+                        &:hover {
+                              color: blue;
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  
+     @include mobile {
+        width: 70%;
+    height: 550px;
+              }
+                                  
+              @include tablet {
+            width: 70%;
+                                    }
+                                  }
+                                  
+ 
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   
+
+    input {
+      border: 1px solid black;
+      width: 400px;
+      border-radius: 25px;
+      height: 30px;
+      gap: 10px;
+      margin-right: 120px;
+      @include mobile{
+        width:125px;
+        margin-top: -20px; 
+        margin-left: -20px; 
+
+                 }
+                 @include tablet{
+                    width:225px;
+                    margin-top: -20px; 
+                    margin-left: -20px;                             }
+    }
+  
+  .add-story-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: none;
+    background-color: #5271ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 150px;
+    cursor: pointer;
+
+    @include mobile{
+        padding: 1px 2px;
+        border-radius: 5px;
+        width: 70px;    }
+  }
+
+
+  
+    .post-options {
+      display: grid;
+      align-items: center;
+      gap: 10px;
+      margin-top: 60px;
+      margin-right: 40px;
+    
+    }
+  }
+  
+
+}}}
