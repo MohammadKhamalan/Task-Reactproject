@@ -2,6 +2,8 @@
   "name": "reactproject",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://MohammadKhamalan.github.io/Task-Reactproject",
+
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
@@ -17,11 +19,12 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build" ,
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+   
   },
   "eslintConfig": {
     "extends": [
@@ -42,7 +45,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.0.0",
     "resolve-url-loader": "^5.0.0",
     "sass": "^1.66.1",
     "sass-loader": "^13.3.2"
